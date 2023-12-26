@@ -1,0 +1,7 @@
+ มีการใช้ singleton, abstract factory และ factory
+- singleton ใช้กับ CustomerMailApplication เนื่องจากมองว่าเป็น application เดียว และให้ customer เข้าใช้งานทีละคน
+จึงควรมี application เดียว แต่ยังไม่มั่นใจว่าเป็นคอนเซปนี้หรือไม่ หรือจะนับเป็น 1 Customer จะมี 1 App 
+- abstract factory ใช้ในการสร้างกลุ่มของ Advertise สำหรับ Customer แต่ละประเภท คิดว่าช่วยให้ง่ายขึ้นในการเพิ่มรูปแบบ Advertise ใหม่ ๆ 
+* Advertise หมายถึงรูปแบบการโฆษณา ex. mail, Brochure
+- factory ใช้ในการเลี่ยงการสร้าง Object ของ customer แต่ละประเภทโดยตรง
+abstract factory และ factory ช่วยให้ main ไม่ต้องเข้าถึง concrete class โดยตรง
